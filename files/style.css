@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #0ABAB5;
+  --dark-bg: #0d1117;
+  --card-bg: #161b22;
+}
+
+body {
+  background-color: var(--dark-bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+.nav-link{
+    font-weight: bold;
+    color: white !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #1a1f2e 100%);
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  object-fit: cover;
+}
+
+.typing-text {
+  border-right: 1.5px solid var(--primary-color);
+  animation: blink 0.4s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.project-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--primary-color);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px #0ABAB5(108, 99, 255, 0.2);
+}
+
+.skill-badge {
+  background-color: var(--card-bg);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: bold;
+  padding: 15px 5px;
+  width: 80px;
+  height: 30px;
+  border-radius: 25px;
+}
+.btn{
+    border-radius: 20px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--card-bg);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+  border-radius: 50%;
+}
+
+section {
+  padding: 80px 0;
+}
